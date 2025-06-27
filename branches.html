@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Branches - TD Loans</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Modernized LUCAS V2 Style - Matching Index.html */
+        .branch-hero {
+            background: url('assets/branch-hero.jpg') no-repeat center center/cover;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+            margin-top: 60px;
+            position: relative;
+        }
+        
+        .branch-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .branch-hero .container {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            animation: fadeIn 1s ease;
+        }
+        
+        .branch-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .branch-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: var(--white);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Modernized Branch Cards */
+        .branches-section {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .branches-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .branch-card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-medium);
+        }
+        
+        .branch-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .branch-name {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--light-bg);
+            font-weight: 600;
+        }
+        
+        .branch-info {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .branch-info i {
+            color: var(--accent);
+            margin-right: 12px;
+            font-size: 1.1rem;
+            margin-top: 3px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .branch-hero {
+                height: auto;
+                padding: 100px 20px;
+            }
+            
+            .branch-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .branch-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .branches-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/td-loans-logo-transparent.png" alt="TD Loans Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="branches.html" class="active">Branches</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Clear Image -->
+    <section class="branch-hero">
+        <div class="container">
+            <h1>Our Nationwide Branches</h1>
+            <p>Conveniently located across South Africa to serve your financial needs</p>
+        </div>
+    </section>
+
+    <!-- Branches Section - ALL 9 BRANCHES INCLUDED -->
+    <section class="branches-section">
+        <div class="section-title">
+            <h2>Find Your Nearest Branch</h2>
+            <p>Visit us at any of our conveniently located branches</p>
+        </div>
+        
+        <div class="branches-container">
+            <!-- Kwadukuza Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">KWADUKUZA</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>13 Chief Albert Luthuli Street, White House Center, Suite 14, 1st floor, Stanger, Kwadukuza</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 32 123 4567</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Durban Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">DURBAN</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Office 408 Pioneer Building Place, West Street, Durban 4000</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 31 123 4567</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Harding Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">HARDING</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Shop 1, 115 Hawkings Street, Harding 4680</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 39 123 4567</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Ixopo Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">IXOPO</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Office No 2, First Floor, 113 Stuarts Town 3276</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 39 123 4568</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Durban (Doone House) Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">DURBAN (Doone House)</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Office 201J, 379 Anton Lembede Street, Durban 4001</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 31 123 4568</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Kokstad Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">KOKSTAD</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Unit 1, 73 Main Street, Kokstad 4001</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 39 123 4569</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Port Shepstone Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">PORT SHEPSTONE</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Office 10, Ground Floor, Portston Center, 42-44 Aiken Street, Port Shepstone 4240</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 39 123 4570</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Empangeni Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">EMPANGENI</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Office 5, Mivaness Building, Cnr Old Main & Turnbull Street</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 35 123 4567</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+            
+            <!-- Pinetown Branch -->
+            <div class="branch-card">
+                <h3 class="branch-name">PINETOWN</h3>
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Shop 14, Moodieblue Centre, 54 Moodieblue Street, Pinetown 3610</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 31 123 4569</span>
+                </div>
+                <div class="branch-info">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Fri: 8:30am - 5pm<br>Sat: 9am - 1pm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/td-loans-logo-transparent.png" alt="TD Loans Logo" class="footer-logo">
+                    <p>Your trusted partner in financial solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                        <li><a href="branches.html">Our Branches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="apply.html">Short-Term Loans</a></li>
+                        <li><a href="apply.html">Long-Term Loans</a></li>
+                        <li><a href="funeral.html">Funeral Policies</a></li>
+                        <li><a href="debt.html">Debt Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="complaints.html">Complaints</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TD Loans. All Rights Reserved. | POPIA Compliant</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
